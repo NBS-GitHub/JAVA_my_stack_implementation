@@ -15,6 +15,8 @@ public class App {
       System.out.println(stack);
 
       stack.pop();
+      stack.pop();
+      stack.pop();
       System.out.println("Stack after popping: " + stack);
 
       System.out.println("Peek: " + stack.peek());

@@ -11,11 +11,17 @@ public class MyStack<T> {
    }
 
    public T pop() {
-      return list.remove(list.size() - 1);
+      T topElement = null;
+      if(list.size() > 0)
+         topElement = list.remove(list.size() - 1);
+      return topElement;
    }
 
    public T peek() {
-      return list.get(list.size() - 1);
+      T topElement = null;
+      if(list.size() > 0)
+         topElement = list.get(list.size() - 1);
+      return topElement;
    }
 
    public int size() {
